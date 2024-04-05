@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Pay via LankaPay</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file -->
+    <!--========== HTML META TAGS ===========-->
+    
+    <meta property="og:image" content="https://ibb.co/KVJnHRj" />
+
+
+    <!--========== FAVICON ===========-->
+    <link rel="icon" href="./assets/svg/logo.svg" type="image/svg+xml" />
+
+    <!--========== GOOGLE FONTS ===========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--========== BOX ICONS ===========-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--========== CSS ===========-->
+    <link rel="preload" href="./assets/css/style.min.css" as="style" />
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <script type="text/javascript">
+        // Function to disable right-click event
+        function disableRightClick(event) {
+            // Prevent the default context menu
+            event.preventDefault();
+        }
+        // Add event listener for the 'contextmenu' event
+        document.addEventListener('contextmenu', disableRightClick);
+    </script>
     <style>
         .qr-code {
             width: 450px; 
@@ -14,6 +48,54 @@
     </style>
 </head>
 <body>
+    <!--========== HEADER ===========-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav_box">
+          <a href="https://www.premiumsupport.tech/" class="nav_logo">
+            <img
+              src="./assets/svg/logo.svg"
+              width="44"
+              height="41"
+              alt="Subscription Logo"
+            />
+            Premium Support
+          </a>
+        </div>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="https://www.premiumsupport.tech/" class="nav_link">Home</a>
+            </li>
+            <li class="nav_item">
+              <a href="https://www.premiumsupport.tech/about/" class="nav_link"
+                >About</a
+              >
+            </li>
+            <li class="nav_item">
+              <a href="https://www.premiumsupport.tech/AllProducts" class="nav_link">Products</a>
+            </li>
+            <li class="nav_item">
+              <a href="https://www.premiumsupport.tech/#faqs" class="nav_link">FAQs</a>
+            </li>
+            <li class="nav_item">
+              <a href="https://www.premiumsupport.tech/contact" class="nav_link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav_close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+
+        <div class="nav_btns">
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- Your website content goes here -->
     <h1>QR Pay via LankaPay</h1>
     <a>
