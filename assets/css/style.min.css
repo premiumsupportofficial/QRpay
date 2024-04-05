@@ -24,4 +24,20 @@
     border-radius: 50%; /* Makes it round */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
-  
+
+body {
+    display: flex;
+    justify-content: center; /* Centers horizontally in the flex container */
+    align-items: center; /* Centers vertically in the flex container */
+    min-height: 100vh; /* At least the full height of the viewport */
+    flex-direction: column; /* Stack flex items vertically */
+}
+
+.qr-code {
+    max-width: 450px; 
+    max-height: 600px;
+    width: 80%; /* Example: Width is 80% of the parent container */
+    height: auto; /* Maintain aspect ratio */
+    margin: auto; /* Center the image within the flex container */
+}
+
